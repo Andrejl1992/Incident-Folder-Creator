@@ -51,7 +51,7 @@ def create_incident_folder(incident_type):
     
     # Check if the incident type is valid
     if incident_type not in incident_categories:
-        print("❌ Invalid incident type. Please choose from:", list(incident_categories.keys()))
+        print("Invalid incident type. Please choose from:", list(incident_categories.keys()))
         return
     
     # Load and update case counter
@@ -91,7 +91,7 @@ def create_incident_folder(incident_type):
         f.write("Assigned Officers: \n")  # Placeholder for Phase 2
     
     # Confirmation message
-    print(f"✅ Folder created: {folder_name}")
+    print(f"Folder created: {folder_name}")
     print("   Subfolders: /reports, /evidence")
     print("   Summary file: incident_summary.txt (with officer placeholder)")
 
